@@ -72,9 +72,9 @@ class _AuthPageState extends State<AuthPage> {
           centerTitle: true,
           title: Text(_isRegistering ? 'Register' : 'Login',
               style: const TextStyle(fontWeight: FontWeight.bold)),
-          actions: [
+          actions:  [
             IconButton(
-              onPressed: () {},
+              onPressed: () => _handleLogout(context),
               icon: const Icon(Icons.logout),
             )
           ],
